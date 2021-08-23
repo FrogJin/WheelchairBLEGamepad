@@ -1,1 +1,1 @@
-KERNEL=="event*", SUBSYSTEM=="input", SUBSYSTEMS=="input", ATTRS{name}=="Bluefruit52 Keyboard", ACTION=="add", RUN+="/bin/bluefruit-k2j.sh"
+KERNEL=="event*", SUBSYSTEM=="input", SUBSYSTEMS=="input", ATTRS{name}=="Bluefruit52_Joy Keyboard", ACTION=="add", RUN+="/bin/bluefruit-k2j.sh"

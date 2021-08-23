@@ -9,7 +9,7 @@ evtest_and_exit() {
 
 #event name looking for
 echo "Bluefruit Keyboard added at $(date)" >>/tmp/scripts.log
-EveName="Bluefruit52 Keyboard"
+EveName="Bluefruit52_Joy Keyboard"
 
 #find number of events
 NumOfEve=$(ls /dev/input | grep -c event*)
@@ -25,8 +25,10 @@ do
 	then
 		echo "Bluefruit Keyboard found" >>/tmp/scripts.log
 		xboxdrv --evdev /dev/input/event$i \
-		--evdev-keymap KEY_U=a,KEY_I=b,KEY_J=x,KEY_K=y,KEY_O=rt,KEY_Y=lt,KEY_L=rb,KEY_H=lb \
-		--mimic-xpad --silent --quiet
+		--mimic-xpad \
+		--dpad-as-button \
+		--evdev-keymap KEY_J=a,KEY_K=b,KEY_L=x,KEY_U=y,KEY_W=du,KEY_S=dd,KEY_A=dl,KEY_D=dr \
+		--silent --quiet
 	fi
 	i=`expr $i + 1`
 done
