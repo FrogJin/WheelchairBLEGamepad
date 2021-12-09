@@ -9,7 +9,7 @@ evtest_and_exit() {
 
 #event name looking for
 echo "Tim Pi Mouse added at $(date)" >>/tmp/scripts.log
-EveName="ThanhLe_Keyboard_Mouse"
+EveName="Tim_Multiinterfacing_Device"
 
 #find number of events
 NumOfEve=$(ls /dev/input | grep -c event*)
