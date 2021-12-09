@@ -1,0 +1,3 @@
+[submodule "keyboard_mouse_emulate_on_raspberry"]
+	path = keyboard_mouse_emulate_on_raspberry
+	url = https://github.com/quangthanh010290/keyboard_mouse_emulate_on_raspberry.git

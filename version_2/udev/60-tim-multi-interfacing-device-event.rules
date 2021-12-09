@@ -1,0 +1,1 @@
+KERNEL=="event*", SUBSYSTEM=="input", SUBSYSTEMS=="input", ATTRS{name}=="ThanhLe_Keyboard_Mouse", ACTION=="add", RUN+="/bin/tim-multi-interfacing-device-m2j.sh"
